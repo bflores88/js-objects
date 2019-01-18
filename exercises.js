@@ -321,6 +321,20 @@ console.log(plainBoxResult);
     Invoke your function and pass in your stockCar object, store the result to a variable named isAutomaticTransmission and use `console.log` to inspect your results.
  */
 
+ var stockCar = {
+     automaticTransmission: true
+ };
+
+ function detectingTransmission(muchObjects){
+     if(muchObjects.automaticTransmission === true){
+         return 'This car is automatic.'
+     } else {
+         return 'This car is a stick shift'
+     }
+ }
+
+ var isAutomaticTransmission = detectingTransmission(stockCar);
+ console.log(isAutomaticTransmission);
 
 /*
 12.  Who's driving this thing?!
