@@ -279,6 +279,14 @@ console.log(sumObjResult);
         **create more** objects and invoke your function multiple times.
  */
 
+ function printObj(thisObject){
+     console.log('if this object was passed into your function:');
+     console.log(thisObject);
+     console.log('it should print a message saying');
+     console.log(thisObject.a + ' + ' + thisObject.b + ' = ' + thisObject.result);
+ }
+
+ printObj(sumObj);
 
 /*
 10. Putting stuff in `plainBox`
