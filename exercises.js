@@ -348,8 +348,13 @@ console.log(plainBoxResult);
       your results. Consider using `plainPerson` as your driver.
  */
 
+function addDriver(aCar, aPerson){
+    aCar.driver = aPerson;
+    return aCar
+}
 
-
+var stockCarWithDriver = addDriver(stockCar, plainPerson)
+console.log(stockCarWithDriver)
 
 /*
     #Final Boss
