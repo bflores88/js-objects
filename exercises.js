@@ -249,6 +249,18 @@ console.log(stockCar)
         to inspect your results.
 */
 
+var sumObj = {};
+sumObj.a = 23;
+sumObj.b = 10;
+sumObj.result;
+
+function objectAddition(anObject){
+   anObject.result = anObject.a + anObject.b;
+   return anObject;
+}
+
+sumObjResult = objectAddition(sumObj)
+console.log(sumObjResult);
 
 /*
 9. Print sum function and add as new key-value
