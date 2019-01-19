@@ -249,10 +249,11 @@ console.log(stockCar)
         to inspect your results.
 */
 
-var sumObj = {};
-sumObj.a = 23;
-sumObj.b = 10;
-sumObj.result;
+var sumObj = {
+a: 23,
+b: 10,
+result: undefined
+}
 
 function objectAddition(anObject){
    anObject.result = anObject.a + anObject.b;
@@ -280,13 +281,11 @@ console.log(sumObjResult);
  */
 
  function printObj(thisObject){
-     console.log('if this object was passed into your function:');
+     thisObject.output = thisObject.a + ' + ' + thisObject.b + ' = ' + thisObject.result;
      console.log(thisObject);
-     console.log('it should print a message saying');
-     console.log(thisObject.a + ' + ' + thisObject.b + ' = ' + thisObject.result);
  }
 
- printObj(sumObj);
+ printObj(sumObjResult);
 
 /*
 10. Putting stuff in `plainBox`
@@ -298,7 +297,7 @@ console.log(sumObjResult);
         plainBoxResult and use `console.log` to inspect your results.
  */
 
-var plainBox = {contents: []}
+// var plainBox = {contents: []}
 
  function putInPlainBox(anotherObject){
      for (var i=0; i<10; i++){
