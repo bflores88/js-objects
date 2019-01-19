@@ -321,9 +321,10 @@ console.log(plainBoxResult);
     Invoke your function and pass in your stockCar object, store the result to a variable named isAutomaticTransmission and use `console.log` to inspect your results.
  */
 
- var stockCar = {
-     automaticTransmission: true
- };
+//  var stockCar = {
+//      automaticTransmission: true
+//  };
+
 
  function detectingTransmission(muchObjects){
      if(muchObjects.automaticTransmission === true){
